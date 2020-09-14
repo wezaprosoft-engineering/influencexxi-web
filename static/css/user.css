@@ -1,0 +1,345 @@
+body{
+    background-color: whitesmoke;
+}
+.header-user{
+background-color: white;
+}
+.header-user .navbar{
+    background-color: white !important;
+    z-index: 9999;
+    padding: 0;
+}
+
+.header-user .navbar ul li a {
+    color: grey !important;
+    font-size: 15px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    padding: 20px 20px !important;
+    position: relative;
+    border-bottom: 1px solid transparent!important;
+}
+.header-user .navbar ul li a:hover {
+    color: #f5af02 !important;
+}
+
+
+
+
+
+
+.banner-user{
+    position: relative;
+    height: 390px;
+    background-image: url(../cimg/watch.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    transition: 0.5s;
+}
+.banner-user .overlay{
+    padding-top: 270px;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+
+.banner-user ul{
+    list-style: none;
+    margin-top: 40px;
+}
+.banner-user ul li{
+    color: white;
+    display: inline-block;
+    padding:0 20px;
+
+}
+.banner-user ul li span{
+    margin: 0 5px;
+    color:#f5af02 ;
+}
+.banner-user ul li a{
+    background-color: gainsboro;
+    padding: 10px 30px;
+    color: black;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.banner-user ul li a:hover{
+    background-color: #212121;
+    padding: 10px 30px;
+    color: #f5af02;
+    transition: 0.3s;
+}
+.banner-user .user-show{
+    display: flex;
+}
+.banner-user .user-img {
+
+}
+.banner-user .user-img img{
+    border-radius: 50%;
+}
+.banner-user .user-desc{
+
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    .banner-user{
+        height: 390px;
+        color: white;
+        transition: 0.5s;
+    }
+    .banner-user .overlay{
+        padding-top: 120px;
+        transition: 0.5s;
+    }
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1100px){
+    .banner-user{
+        height: 390px;
+        font-weight: 700;
+        color: white;
+        transition: 0.5s;
+    }
+    .banner-user .overlay{
+        padding-top: 210px;
+        transition: 0.5s;
+    }
+    .banner-user .banner-headings{
+
+    }
+
+
+
+}
+
+
+/******all lisitng****/
+
+.dashboard .all-listing{
+    padding: 20% 0 15% 0;
+    background-color: #52BAE7;
+
+}
+
+
+.dashboard .all-listing .i-circle {
+    background: transparent;
+    color: #fff;
+    padding: 20px 55px;
+    border-radius: 50%;
+    font-size: 90px;
+    border: 10px solid #9CE0F5;
+}
+.dashboard .all-listing h2{
+    font-size: 24px;
+    color: white;
+    margin-top: 30px !important;
+}
+
+.dashboard .all-listing1{
+    padding: 19% 0 10% 0;
+    background-color: #5A5B5C;
+
+}
+.dashboard .all-listing1 h4{
+    font-size: 20px;
+    color: white;
+    margin-top: 30px!important;
+}
+
+.dashboard .all-listing1 .i-circle {
+    background: transparent;
+    color: #fff;
+    padding: 20px 35px;
+    border-radius: 50%;
+    font-size: 35px;
+    border: 5px solid rgba(255,255,255,0.4);
+}
+
+.dashboard .all-listing2{
+
+    background-color: #5A5B5C;
+    background-image: url(../cimg/b1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 55vh;
+
+
+}
+.dashboard .all-listing2 .overlay{
+    position: absolute;
+    padding: 18% 0 18% 0;
+    background-color: rgba(0,0,0,0.6);
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+
+}
+
+.dashboard .all-listing2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dashboard .all-listing2 ul li {
+    padding: 20px 20px;
+    display: inline-block;
+    text-align: left;
+}
+.dashboard .all-listing2 ul li i{
+    font-size: 40px;
+    color: #f5af02;
+
+}
+.dashboard .all-listing2 ul li span{
+    font-size: 35px;
+    font-weight: 700;
+    color: #f5af02;
+}
+.dashboard .all-listing2 ul li p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.dashboard .all-listing3{
+
+    background-color: #5A5B5C;
+    background-image: url(../cimg/b2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 350px;
+
+
+}
+.dashboard .all-listing3 .overlay{
+    position: absolute;
+    padding: 18% 0 18% 0;
+    background-color: rgba(0,0,0,0.6);
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+
+}
+
+.dashboard .all-listing3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dashboard .all-listing3 ul li {
+    padding: 20px 20px;
+    display: inline-block;
+    text-align: left;
+}
+.dashboard .all-listing3 ul li i{
+    font-size: 40px;
+    color: #f5af02;
+
+}
+.dashboard .all-listing3 ul li span{
+    font-size: 35px;
+    font-weight: 700;
+    color: #f5af02;
+}
+.dashboard .all-listing3 ul li p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.profile .user-detail {
+    background-color: white;
+    padding: 30px 0;
+}
+.profile .user-detail .user-desc p{
+    color: deepskyblue;
+    font-weight: 600;
+}
+.profile .user-detail .user-img img{
+    border-radius: 50%;
+}
+.profile .user-para{
+    background-color: white;
+    padding: 30px;
+}
+
+
+
+/* Tabs*/
+
+.list-all section {
+    padding: 60px 0;
+}
+
+.list-all section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.list-all #tabs{
+    background: #007b5e;
+    color: #eee;
+}
+.list-all #tabs h6.section-title{
+    color: #eee;
+}
+
+.list-all #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    /*border-color: transparent transparent #f3f3f3;*/
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid white !important;
+}
+.list-all #tabs .nav-tabs .nav-link {
+    border: 2px solid gray;
+    color: #eee;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.list-all .nav-tabs{
+    border-bottom: none;
+}
+.list-all .list-rows{
+    border-bottom: 1px solid gainsboro;
+}
+.list-all .list-rows ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list-all .list-rows ul li {
+    display: inline-block;
+    margin-right: 10px;
+}

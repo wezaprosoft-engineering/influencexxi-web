@@ -1,0 +1,305 @@
+a{
+    text-decoration: none !important;
+    text-underline: none !important;
+}
+
+/* ============ Gallery ========== */
+.work-filter{ margin-bottom:40px;}
+.work-filter li{
+    display:inline-block;
+    margin:0 20px;
+}
+.work-filter li a{
+    font-size:16px;
+    border-bottom:2px solid transparent;
+    text-shadow: none;
+    position: relative;
+    padding:5px 0;
+    display:block;
+    color: black;
+    font-weight: 600;
+}
+.work-filter li a:before{
+    filter: alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity:0;
+}
+.work-filter li a:before, .work-filter li a.active:before{
+    position: absolute;
+    bottom:-2px;
+    left:0;
+    overflow: hidden;
+    width: 0;
+    border-bottom: 2px solid #25C1E7;
+    color: #25C1E7;
+    content: attr(data-hover);
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    transition:width 0.5s;
+    padding:10px 0;
+}
+.work-filter li a.active:before{
+    filter: alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity:1;
+    opacity:1;
+    width:100%;
+}
+.work-filter li a:hover::before,
+.work-filter li.active a, .work-filter li a.active:hover::before{
+    filter: alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity:1;
+    opacity:1;
+    width:100%;
+}
+.work-filter li a:hover, .work-filter li a.active{ color: #25C1E7;}
+#gallery .work-item {
+    position: relative;
+    padding:0 15px;
+}
+#gallery .home-gallery .work-item { padding: 15px!important;}
+.mix { display: none; }
+#gallery .work-item img{
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+#gallery .work-item:hover img{
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1);
+}
+#gallery .gallery_content{
+    position:relative;
+    overflow:hidden;
+}
+#gallery .gallery_content a{
+    font-family: 'Poppins', sans-serif;
+    color: #25C1E7;
+}
+#gallery .gallery_content h3{
+    font-size:20px;
+    color:#25C1E7;
+    margin-top:20px;
+}
+#gallery .gallery_content small{
+    font-size:14px;
+    color:#796e6e;
+    margin-bottom:20px;
+    display:inline-block;
+}
+.gallery_content a.btn-readmore{
+    position: relative;
+    text-shadow:none;
+    text-transform:capitalize;
+}
+.gallery_content a.btn-readmore:before{
+    color: #25C1E7;
+    content: attr(data-hover);
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+    top:0.5px;
+    position: absolute;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    -moz-transform: scale(1.1) translateX(10px) translateY(10px);
+    -ms-transform: scale(1.1) translateX(10px) translateY(10px);
+    -webkit-transform: scale(1.1) translateX(10px) translateY(10px);
+    transform: scale(1.1) translateX(10px) translateY(10px);
+
+    -moz-transition: transform 0.3s ease 0s, all 0.3s ease 0s;
+    -ms-transition: transform 0.3s ease 0s, all 0.3s ease 0s;
+    -webkit-transition: transform 0.3s ease 0s, all 0.3s ease 0s;
+    transition: transform 0.3s ease 0s, all 0.3s ease 0s;
+}
+.gallery_content a.btn-readmore:hover::before, .gallery_content a.btn-readmore:focus::before{
+    filter: alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity:1;
+    opacity: 1;
+    -transform: scale(1) translateX(0px) translateY(0px);
+    -webkit-transform: scale(1) translateX(0px) translateY(0px);
+    -ms-transform: scale(1) translateX(0px) translateY(0px);
+    transform: scale(1) translateX(0px) translateY(0px);
+}
+.image{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.image img{ width:100%; }
+#gallery .work-item:hover .overlay{
+    filter: alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity:1;
+    opacity: 1;
+}
+/* ============ Gallery Ends ========== */
+
+
+/* ========== Our Food ======== */
+/*#page_header{*/
+    /*background:url(../images/page-header.jpg) no-repeat;*/
+    /*width:100%;*/
+    /*position:relative;*/
+    /*min-height:280px;*/
+    /*background-size:cover;*/
+    /*background-position:center center;*/
+    /*text-align:right;*/
+/*}*/
+/*#page_header .page_title{*/
+    /*padding:22px 0;*/
+    /*position:absolute;*/
+    /*bottom:0;*/
+    /*width:100%;*/
+/*}*/
+/*#page_header .page_title h2.title{*/
+    /*font-size:36px;*/
+    /*vertical-align:top;*/
+/*}*/
+/*#page_header .page_title h2.title, #page_header .page_title p{ color:#fff;}*/
+/*#page_header .page_title p{ margin-bottom:0;}*/
+
+/*#welcome{ }*/
+/*ul.welcome_list{ margin-top:40px;}*/
+/*ul.welcome_list li{*/
+    /*width:48%;*/
+    /*display:inline-block;*/
+    /*font-size:18px;*/
+    /*margin-bottom:15px;*/
+    /*margin-left:15px;*/
+/*}*/
+/*ul.welcome_list li:before{*/
+    /*content:'';*/
+    /*background:#e25111;*/
+    /*height:7px;*/
+    /*width:7px;*/
+    /*display:inline-block;*/
+    /*vertical-align:middle;*/
+    /*margin-right:10px;*/
+    /*border-radius:100%;*/
+    /*margin-left:-15px;*/
+/*}*/
+/*#our-cheffs .item{ padding:0 15px; }*/
+/*.cheffs_wrap img{ width:100%;}*/
+/*.cheffs_wrap p{margin:0; }*/
+/*#food{}*/
+/*.grid_layout .wrap-col{ padding:0 15px;}*/
+/*.grid_layout .wrap-col.first{ padding-bottom:30px;}*/
+/*.grid_layout .item-container img,*/
+/*.services_wrap img{*/
+    /*-moz-transform: scale(1.15);*/
+    /*-ms-transform: scale(1.15);*/
+    /*-o-transform: scale(1.15);*/
+    /*-webkit-transform: scale(1.15);*/
+    /*transform: scale(1.15);*/
+/*}*/
+.grid_layout .item-container{ overflow:hidden; }
+.overlay{
+    background-color: rgba(0, 0, 0, 0.85);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    filter: alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity:0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    cursor:crosshair;
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.overlay .overlay-inner, .overlay a.overlay-inner{
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    -o-transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    font-size:24px;
+    color:#fff;
+    text-align:center;
+}
+a.overlay-inner > i{ font-size:30px; }
+.overlay .social_icon,
+.grid_layout .item-container .overlay .icon,
+#gallery .item-container .overlay a.icon{
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    margin:auto;
+    -moz-transform: translateY(1000%);
+    -ms-transform: translateY(1000%);
+    -o-transform: translateY(1000%);
+    -webkit-transform: translateY(1000%);
+    transform: translateY(1000%);
+    z-index:9;
+}
+.item-container:hover .social_icon,
+#gallery .item-container:hover .overlay a.icon{
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.grid_layout .item-container .overlay a,
+#gallery .item-container .overlay a.icon{
+    color:#fff;
+    font-size:30px;
+}
+.item-container:hover .overlay
+.news_thumb .image:hover .overlay,
+.popular:hover .overlay{
+    filter: alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity:1;
+    opacity:1;
+}
+.grid_layout .item-container:hover img, .item-container:hover .overlay,
+.news_thumb .image:hover .overlay, .popular:hover .overlay,
+.grid_layout .item-container:hover .overlay{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    filter: alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity:1;
+    opacity:1;
+}
+.popular{
+    border:1px solid #e5e5e5;
+    padding-bottom:10px;
+}
+.popular h4{ margin-top:20px;}
+.popular h4, .popular .dish{ font-weight:bold;}
+.popular .dish{
+    display:block;
+    margin:10px 0;
+    color: #25C1E7;
+}
+
+/* ========== Our Food Ends ======== */
+
