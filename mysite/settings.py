@@ -146,7 +146,7 @@ MEDIA_URL = '/media/'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-# ckeditor
+# ckeditor options
 CKEDITOR_UPLOAD_PATH = 'content/ckeditor/'
 
 CKEDITOR_CONFIGS = {
