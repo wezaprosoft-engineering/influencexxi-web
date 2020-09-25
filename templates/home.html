@@ -1,0 +1,441 @@
+{% load static %}
+<!DOCTYPE html>vv
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INFLUENCE XXI</title>
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+
+ .my-banner{
+    background-image: url("{% static 'cimg/Background/enlarge.jpg' %}");
+
+}
+
+</style>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="col-md-12">
+                <nav class="navbar navbar-light">
+                    <a class="navbar-brand" href="https://youtu.be/z7iP5q1q5aY">
+                        <img src="{% static 'cimg/logo.png' %}" width="280px" class="d-inline-block align-top img-fluid" alt="" style="text-align: center;">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+        <div class="my-banner">
+            <div class="my-overlay">
+                <div class="container">
+                    <div class="banner-img">
+                        <div class="row">
+                            <div class="col-md-12">
+
+        <div class="header-container">                      
+            
+                 
+        <div class="slideshow-container">
+            <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+            <a class="next" onclick="plusSlides(1)" >&#10095;</a>  
+
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <!-- <a href="https://us02web.zoom.us/webinar/register/WN_tmxIAF2GTUahgfzobKuIbw">
+                <img src="cimg/banner/banner-3.jpg"   class="img-fluid">
+            </a> -->
+            <iframe width="100%" height="507px" src="https://www.youtube.com/embed/XrcjCrdzVlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!-- <div class="text">Caption Text</div> -->
+            </div>
+            
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <a href="https://us02web.zoom.us/webinar/register/WN_tmxIAF2GTUahgfzobKuIbw">
+                <img src="cimg/banner/banner-3.jpg"  class="img-fluid">
+            </a>
+              <!-- <div class="text">Caption Two</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <a href="https://us02web.zoom.us/webinar/register/WN_tmxIAF2GTUahgfzobKuIbw">
+                <img src="cimg/banner/banner-3.jpg"  class="img-fluid">
+            </a>
+              <!-- <div class="text">Caption Three</div> -->
+              
+            </div>
+
+            
+            
+            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+            
+            </div>
+            <a href="https://us02web.zoom.us/webinar/register/WN_tmxIAF2GTUahgfzobKuIbw">
+                <button type="button" class="btn btn-primary btn-rounded" style="text-align: center; font-size: 14px;padding: 10px 22px;border-radius: 10px;">Register</button>
+            </a>
+           
+            </div>
+
+           
+
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+        
+            
+
+    <div class="my-banner">
+        <div class="my-overlay" style="background-color: whitesmoke;">
+            <div class="container">
+                <div class="banner-img">
+                    <div class="row">
+                        
+                        <div class="col-md-12 text-center">
+                            <h2 style="font-weight: bold; color: black;" >InfluenceXXI is uncovering influence factors for business success in the 21st Century
+                            </h2>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="blog-section">
+        <div class="container">
+            <hr />
+            <div class="row">
+                {% for post in posts %}
+               <div class="col-md-4" style="border-right: 1px solid rgba(0,0,0,.1)">
+                    <a href='{% url "detail"  post.pk %}'>
+                        <div class="blog-box">
+                            <img src="{{post.image.url}}" style="width: 100%; height: 230px;"class="img-fluid" />
+                            <h6>NEWMARK GROUP LTD</h6>
+                            <h3>{{post.title}}</h3>
+                            <p>{{post.author}} <span>Mar 22 · 4 min read</span></p>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            <hr style="margin-top: 26px" />
+        </div>
+    </div>
+
+
+    <div class="section-slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 p-0">
+                    <div class="slider-col-1" style="">
+                        <div class="my-overlay d-flex align-items-center">
+                            <h2>Executive Voice & Thought Leadership</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 p-0">
+                    <div class="owl-carousel owl-theme tm-owl-carousel-2col card-slider"
+                        style="background-color: #0E1D3C; padding: 60px 10px" data-nav="true" data-autoplay="true"
+                        data-loop="true" data-duration="6000" data-smartspeed="2000" data-margin="30"
+                        data-stagepadding="0">
+                        {% for leadership in leaderships %}
+                        <div class="tm-carousel-item">
+                            <div class="card" style="">
+                                <img class="card-img-top"
+                                    src="{{leadership.image.url}}" alt="{{leadership.title}}">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{leadership.title }}</h5>
+                                   
+                                    <!-- <a href="">Learn More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="brands-slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <h1 class="text-center">A Stellar Cast of Partners</h1>
+                    <div class="owl-carousel brand owl-theme align-items-center m-auto">
+                        <!-- <div class="item">
+                            <img src="{% static 'cimg/logo/6.png' %}"  class="img-fluid" style="align-content: center;">
+                        </div> -->
+                        {% for patner in patners %}
+                        <div class="item">
+                            <img src="{{patner.image.url}}"  class="img-fluid">
+                        </div>
+                        {% endfor %}
+                        
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="courses">
+        <div class="container">
+            <h1 class="text-center">Top Courses & Masterclassess</h1>
+            <div class="row">
+                {% for course in courses %}
+                <div class="col-md-3">
+                    <div class="card" style="width: 100%; height: auto;overflow: hidden;">
+                        <img class="card-img-top" src="{{course.image.url}}" style="width: 100%; height: 180px;" alt="{{course.title}}">
+                        <div class="card-body">
+                            <h4>{{course.title}}</h4>
+                        </div>
+                    </div>
+                </div>
+                 {% endfor %}
+                <!-- <div class="col-sm-3 col-md-3">
+                    <div class="card" style="width: 100%; height: auto;">
+                        <img class="card-img-top" src="cimg/sections/4.png" style="width: 100%; height: 180px;" alt="Card image cap">
+                        <div class="card-body">
+                            <h4>Emotional Intelligence Masterclass</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="card" style="width: 100%; height: auto;">
+                        <img class="card-img-top" src="cimg/sections/3.png" style="width: 100%; height: 180px;" alt="Card image cap">
+                        <div class="card-body">
+                            <h4>Public Speaking Masterclass</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="card" style="width: 100%; height: auto;">
+                        <img class="card-img-top" src="cimg/sections/1.png" style="width: 100%; height: 180px;" alt="Card image cap">
+                        <div class="card-body">
+                            <h4>Deadly Sins of Entrepreneurship 101</h4>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="container">
+            <div class="row">
+                {% for publication in publications  %}
+                <div class="col-md-6">
+                    <h3 class="text-center">Recent Publications</h3>
+                    <div class="owl-carousel recent-pub owl-theme">
+                         
+                        <div class="item">
+                            <img src="{{publication.image.url}}"  alt="{{publication.title}}" style="height:500px " class="img-fluid">
+                        </div>
+                        
+                    </div>
+                    <h4 class="text-center">{{publication.title}}</h4>
+                </div>
+                {% endfor %}
+                {% for video in videos  %}
+                <div class="col-md-6">
+                    <h3 class="text-center">Recent Videos</h3>
+                    <div class="owl-carousel recent-pub owl-theme">
+                        <div class="item">
+                            <a href="{{video.link}}" target="_blank">
+                                <img src="{{video.image.url}}" style="height:500px " class="img-fluid" alt="{{video.title}}">
+                            </a>
+                        </div>
+
+                    </div>
+                    <h4 class="text-center">{{video.title}}</h4>
+                </div>
+               {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="call-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-between align-items-center">
+                    <h3>Want to partner with us or to just have a chat ?</h3>
+                    <a href='{% url "message" %}' class="btn btn-lg">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-sec-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 p-1">
+                        <h3>Address</h3>
+                        <ul>
+                            <li><i class="fa fa-location-arrow"></i> Newmark IMC: Ole Odume Road, Off Ngong Road,
+                                Consumate Court, Block C10, P.O Box. 22429 - 00100, Nairobi, Kenya</li>
+                            <li><i class="fa fa-phone"></i>+254(0)73-011-2021 | +254 (0)202 331 648 | +254 (0)4402473 |
+                                +254 (0)706111777
+
+                            </li>
+                            <li><i class="fa fa-envelope"></i> hello@newmark-imc.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- <h3>Careers</h3>
+                        <p>if you are as awesome as us and would like to join our team, get in touch or just drop by for
+                            a cup of coffee</p>
+                        <a href="mailto:hello@newmark-imc.com"
+                            style="color: rgb(139, 181, 230);">hello@newmark-imc.com</a> -->
+                    </div>
+
+
+
+                    <div class="col-md-4">
+                        <a class="twitter-timeline" data-height="200" data-theme="dark"
+                            data-chrome="nofooter noborders noheader noscrollbar transparent"
+                            href="https://twitter.com/NEWMARKWORLD?ref_src=twsrc%5Etfw">Tweets by NEWMARKWORLD</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                    </div>
+
+
+
+                    <!-- <div class="col-md-5">  
+                    <div class="card">
+                    <h3>Twitter Feeds</h3>
+                    <a href="#">https://twitter.com/</a>
+                    <a class="twitter-timeline" href="https://twitter.com/NEWMARKWORLD?ref_src=twsrc%5Etfw">Tweets by NEWMARKWORLD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+                 </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 d-flex align-items-center" style="background-color: #0E1D3C">
+                    <div class="footer-content align-items-center m-auto">
+                        <p class="pt-2">2019-2020 © INFLUENCEXXI Developed By <a href="https://www.wezaprosoft.com">Weza Prosoft</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+    <script src="{% static 'js/jquery.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script>
+
+        $('#myCarousel').carousel({
+            pause: 'none'
+        })
+
+    </script>
+    <script>
+        $('.csm-trigger').on('click', function () {
+            $('.compare-slide-menu').toggleClass('active');
+        });
+
+        $('.csm-mobile-trigger').on('click', function () {
+            $('.compare-slide-menu').removeClass('active');
+        });
+
+
+
+        $('.csm-trigger1').on('click', function () {
+            $('.compare-slide-menu').toggleClass('active');
+        });
+
+        $('.csm-mobile-trigger1').on('click', function () {
+            $('.compare-slide-menu').removeClass('active');
+        });
+    </script>
+   
+   <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body>
+
+</html>

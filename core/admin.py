@@ -8,6 +8,7 @@ admin.site.register(Course)
 admin.site.register(Video)
 admin.site.register(Publication)
 admin.site.register(Leadership)
+admin.site.register(Webinar)
 
 
 admin.site.site_header='INFLUENCE XXI ADMIN'

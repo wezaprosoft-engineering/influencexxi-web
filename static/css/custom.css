@@ -231,17 +231,17 @@ header{
 
 .brands-slider .owl-nav .owl-prev{
     position: absolute;
-    top: 10%;
-    left: 0;
-    background-color: white!important;
-    color: #0E1D3C !important;
+    top: 30%;
+    right: 102%;
+    background-color:white;
+    color: black !important;
     font-size: 18px !important;
 }
 .brands-slider .owl-nav .owl-next{
     position: absolute;
-    top: 10%;
-    right: 0;
-    background-color: white!important;
+    top: 30%;
+    right: -5%;
+    background-color:white;
     color: #0E1D3C !important;
     font-size: 18px !important;
 }
@@ -355,7 +355,7 @@ footer a{
   }
   .fa {
     font-size: 25px;
-    color: #FFFFFF;
+    color: black;
   }
   .panel-title {
    font-size: 25px; 
@@ -397,7 +397,7 @@ footer a{
   
   /* Slideshow container */
   .slideshow-container {
-    width: 50%;
+    width: 100%;
     max-height: max-content;
     position: relative;
     margin: auto;
@@ -426,18 +426,18 @@ footer a{
   /* Position the "next button" to the right */
   .next {
     /* right: 20px; */
-    left: 290px;
+    left: 600px;
     top: 270px;
-    border-radius: 50%;
-    padding: 20px;   
+    border-radius: 100%;
+    padding: 15px;   
    
   }
   .prev{
       /* right: 500px; */
-      left: -285px;
+      left: -600px;
       top: 270px;
-      border-radius: 50%;
-      padding: 20px;
+      border-radius: 100%;
+      padding: 15px;
       
   }
   
