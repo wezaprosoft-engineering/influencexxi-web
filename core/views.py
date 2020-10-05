@@ -38,3 +38,6 @@ class Message(CreateView):
     form_class = ContactForm
     template_name='new_message.html'
     success_url = reverse_lazy('index')
+
+def main(request):
+	return render(request, 'main.html')
