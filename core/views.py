@@ -25,7 +25,7 @@ def index(request):
 	'webinars':webinars
 	}
 
-	return render(request, 'index.html', context)
+	return render(request, 'main.html', context)
 
 
 class PostDetail(DetailView):

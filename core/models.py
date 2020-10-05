@@ -10,6 +10,7 @@ class Post(models.Model):
 	date_created=models.DateTimeField(auto_now_add=True)
 	date_modified=models.DateTimeField(auto_now_add=True)
 	published=models.BooleanField(default=True)
+	pdf=models.FileField(null=True, blank= True, upload_to='blog-pdfs')
 
 	def __str__(self):
 		return self.title
