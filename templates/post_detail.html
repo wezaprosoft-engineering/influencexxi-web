@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{post.title}}</title>
-    <link href="{% static 'css/custom.css' %}" type="text/css" rel="stylesheet">
-    <link href="{% static 'css/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
-    <link href="{% static 'css/font-awesome/css/font-awesome.min.css' %}" type="text/css" rel="stylesheet">
+    <title>InfluenceXXI Brand Dashboard</title>
+    <link href="{% static 'main/css/custom.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'main/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'main/css/font-awesome/css/font-awesome.min.css' %}" type="text/css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -48,7 +48,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h1>{{post.title}}</h1>
+                    <h1>InfluenceXXI Brand Dashboard</h1>
                 </div>
             </div>
         </div>
@@ -59,71 +59,31 @@
 <div class="blogs-banner">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <img src="{{post.image.url}}" class="img-fluid">
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<div class="courses">
-    <div class="container" >
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">InfluenceXXI Brand Dashboard</h1>
-            </div>
-            <div class="img">
+           
+                <!-- <h1 class="text-center">InfluenceXXI Brand Dashboard</h1> -->
+           
+          
                 <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <iframe src="{{post.pdf.url}}" width="100%" height="550px" "></iframe>
+                    <div class="col-md-12">
+                        <iframe src="{% static 'main/cimg/pdf/InfluenceXXI BRAND DASHBOARD.pdf' %}" width="100%" height="650px"></iframe>
                         <!-- <img src="cimg/InfluenceXXI BRAND DASHBOARD_001.png" alt="" style="text-align: center;"> -->
                     </div>
                 </div>
             </div>
-            </div>
+            
         </div>
     </div>
+
 </div>
 
-<!-- <div class="blog-para">
-    <div class="container">
-        <hr/>
-        <div class="row">
-            <div class="col-md-12">
-               <p>
-                   {{post.body|safe}}
-               </p>
-                <a href='{% url "index" %}' class="btn btn-dark">BACK TO PAGE</a>
-            </div>
-        </div>
-        <hr style="margin-top: 26px"/>
-    </div>
-</div> -->
-
-
-
-
-<!--<footer>-->
-<!--<div class="container">-->
-<!--<div class="row">-->
-<!--<div class="col-md-12 d-flex align-items-center">-->
-<!--<div class="footer-content align-items-center m-auto">-->
-<!--<p class="pt-2">2019-2020 © RELINX Developed By <a href="https://axcore.org/">Axcore Solutions</a>.</p>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</footer>-->
 
 
 
 
 
-
-<script src="{% static 'js/jquery.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'main/js/jquery.min.js' %}"></script>
+<script src="{% static 'main/js/bootstrap.min.js' %}"></script>
 
 <script>
 
