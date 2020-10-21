@@ -88,7 +88,7 @@ DATABASES = {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'wezadb',
             'USER': 'wezauser',
-            'PASSWORD': 'password',
+            'PASSWORD': '33992433',
             'HOST': 'localhost',
             'PORT': '',
         }
