@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '(=%85g5l%=llnz%qo5s=dn2-ry6wtr&8&0kpuy30mwitfz)-im'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -88,7 +88,7 @@ DATABASES = {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'wezadb',
             'USER': 'wezauser',
-            'PASSWORD': '33992433',
+            'PASSWORD': 'password',
             'HOST': 'localhost',
             'PORT': '',
         }
@@ -144,7 +144,7 @@ else:
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+# X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # ckeditor options
 CKEDITOR_UPLOAD_PATH = 'content/ckeditor/'
