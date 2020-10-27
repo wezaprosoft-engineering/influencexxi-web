@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '(=%85g5l%=llnz%qo5s=dn2-ry6wtr&8&0kpuy30mwitfz)-im'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -82,8 +82,19 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #         }
 #     }
-
-DATABASES = {
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'wezadb',
+            'USER': 'wezauser',
+            'PASSWORD': 'password',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
+else:
+    DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
             'NAME': 'wezadb',
@@ -93,6 +104,7 @@ DATABASES = {
             'PORT': '',
         }
     }
+
 
 
 
