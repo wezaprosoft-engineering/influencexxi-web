@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '(=%85g5l%=llnz%qo5s=dn2-ry6wtr&8&0kpuy30mwitfz)-im'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -187,3 +187,5 @@ CKEDITOR_CONFIGS = {
 
 DATA_UPLOAD_MAX_MEMORY_SIZE = 20971520# 20 MB
 FILE_UPLOAD_MAX_MEMORY_SIZE = 20971520# 20 MB
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
